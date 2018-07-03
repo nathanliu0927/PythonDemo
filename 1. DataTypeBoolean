@@ -1,0 +1,9 @@
+a = True
+# The following 'print' statement will print 'a=T'
+# Because for 'and' / 'or', it obeys the 'short circuit calculation'
+# for a and 'a=T', since a == True, the result relies on the value of 'a=T', so the result is 'a=T'
+# for 'a=T' or 'a=F', since 'a=T' == True, 'a=F' will not be considered and 'a=T' will be returned.
+
+# The result will be 'a=T'
+
+print(a and 'a=T' or 'a=F')
